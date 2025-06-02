@@ -1,44 +1,94 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rodriguez - Logistics Solutions
+
+A modern web application for Rodriguez, a leading logistics company providing comprehensive solutions in San Diego, Tijuana, and Ensenada.
+
+## Features
+
+- Responsive design optimized for all devices
+- Real-time currency exchange rates
+- Interactive UI with smooth scrolling
+- Video background on homepage
+- Multi-language support (Spanish/English)
+- Modern and professional design
+
+## Tech Stack
+
+- React
+- TypeScript
+- SCSS
+- Axios for API calls
+- React Scroll for smooth navigation
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- Yarn package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone git@github.com:denour/rodriguez.git
+cd rodriguez
+```
+
+2. Install dependencies:
+```bash
+yarn install
+```
+
+3. Start the development server:
+```bash
+yarn start
+```
+
+The application will be available at [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Runs the app in development mode.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the `build` folder.
 
 ### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you need more control over the build configuration, you can eject at any time.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+src/
+  ├── components/        # React components
+  │   ├── header/       # Header component
+  │   └── pages/        # Page components
+  ├── types/            # TypeScript type definitions
+  └── styles/           # Global styles
+```
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+This project is proprietary and confidential. All rights reserved.
+
+## Contact
+
+For any inquiries, please contact info@gruporodriguez.com
