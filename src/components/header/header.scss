@@ -1,0 +1,114 @@
+nav {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  z-index: 2;
+  position: fixed;
+  .searcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    height: 50px;
+    position: relative;
+    input {
+      outline: none;
+      background: none;
+      color: white;
+      border: none;
+      height: 16px;
+      border-bottom: 2px solid #ffdb00;
+    }
+    img {
+      margin-right: 10px;
+      width: 20px;
+    }
+  }
+  ul.reversed {
+    transform: rotate(90deg);
+    list-style: none;
+    padding: 0px;
+    li {
+      margin: 5px 0px;
+      a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: white;
+        font-size: 1.3vw;
+        cursor: pointer;
+        &.active {
+          color: #fbe616;
+        }
+      }
+    }
+  }
+  ul.principal {
+    list-style: none;
+    padding: 0 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    li {
+      a {
+        text-transform: capitalize;
+        font-weight: 100;
+        text-decoration: none;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0px 20px;
+        cursor: pointer;
+        &.active {
+          color: #fbe616;
+          padding-bottom: 4px;
+          border-bottom: 1px solid #fbe616;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 825px) {
+  .menu {
+    margin-top: 20px;
+    div {
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 0;
+    }
+  }
+  nav {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 75%);
+    justify-content: space-around;
+    .searcher {
+      display: none;
+    }
+
+    ul.reversed {
+      display: none;
+    }
+
+    ul.principal {
+      display: none;
+      background: rgba(0,0,0, 1) !important;
+      li {
+        margin: 2px 0px;
+      }
+      &.active {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        position: absolute;
+        top: 6vh;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 30px 0px;
+      }
+    }
+  }
+}

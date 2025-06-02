@@ -1,0 +1,104 @@
+.events {
+  .slider {
+    display: block;
+    width: 100vw;
+    position: relative;
+    .arrow {
+      display: block;
+      position: absolute;
+      top: 34vh;
+    }
+    .arrow.left {
+      left: 2vw;
+    }
+    .arrow.right {
+      right: 2vw;
+    }
+    .bullets {
+      list-style: none;
+      display: flex;
+      padding: 0px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: -50px;
+      li.active {
+        border-color: #ffdb00;
+        background: #ffdb00;
+      }
+      li {
+        cursor: pointer;
+        width: 7px;
+        height: 7px;
+        border: 1px solid white;
+        border-radius: 100%;
+        margin: 0px 5px;
+      }
+    }
+    .slider-item {
+      width: 100vw;
+      height: 80vh;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1vw;
+        color: white;
+        width: 30vw;
+        line-height: 2vw;
+      }
+      h3 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4vw;
+        font-weight: 100;
+        margin: 0px;
+        strong {
+          &:after {
+            width: 50px;
+            height: 5px;
+            margin: 0px auto;
+            background: #ffdb00;
+            content: " ";
+            display: block;
+            position: relative;
+          }
+        }
+      }
+      a {
+        border: 1px solid #ffdb00;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        color: white;
+        border-radius: 2px;
+        padding: 10px 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 30px;
+        &:hover {
+          background: #ffdb00;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 825px) {
+  .events {
+    .slider {
+      .slider-item {
+        h3 {
+          font-size: 6vw;
+        }
+        p {
+          font-size: 3vw;
+          width: 50vw;
+          line-height: 4vw;
+        }
+      }
+    }
+  }
+}

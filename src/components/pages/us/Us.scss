@@ -1,0 +1,149 @@
+.us {
+  &:after {
+    display: block;
+    position: relative;
+    bottom: -15vw;
+    content: " ";
+    margin: 0 auto;
+    width: 149px;
+    height: 134px;
+    background: url('../../../arrows.png') no-repeat;
+    background-size: 80px;
+  }
+  .rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60vw;
+    margin: 0px auto;
+  }
+  .circle-item {
+    margin: 4vw 0px;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 100%;
+    background: #ffdb00;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &:hover {
+      img {
+        display: none;
+
+      }
+    }
+    img {
+      display: block;
+      position: absolute;
+      width: 15vw;
+      height: auto;
+    }
+    hr {
+      width: 80%;
+      height: 1px;
+      background: white;
+      border: none;
+    }
+    p {
+      font-size: 1.5vw;
+      align-self: center;
+    }
+    .light {
+      margin: 0px;
+      color: #ffffff;
+    }
+    .dark {
+      margin: 0px;
+      color: #2f2f30;
+    }
+  }
+  background: #efefef;
+  padding: 7vw 0vw;
+  box-sizing: border-box;
+  .center-header {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 8vw;
+    width: 50vw;
+    p.line-heighten {
+      line-height: 1.5vw;
+      font-size: 0.9vw;
+      margin-top: 2.5vw;
+    }
+    p.gradient {
+      position: relative;
+      z-index: 4;
+      margin: 0px;
+      font-size: 1vw;
+      letter-spacing: 3px;
+      font-weight: bold;
+      text-align: center;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(252, 224, 47, 1) 40%, rgba(252, 223, 43, 1) 60%, rgba(255, 255, 255, 0) 100%);
+    }
+  }
+
+  h1 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #2f2f30;
+    font-size: 5vw;
+    margin: 0 8vw 0 0;
+    z-index: 2;
+    &:before {
+      position: absolute;
+      content: 'EXPONENCIAMOS';
+      color: #f7f7f7;
+      z-index: -1;
+      font-size: 10vw;
+      top: -3vw;
+      margin-left: -8vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .us {
+    .rows {
+      flex-direction: column;
+    }
+
+    .circle-item {
+      width: 50vw;
+      height: 50vw;
+      img {
+        width: 50vw;
+      }
+      p {
+        font-size: 5vw;
+      }
+    }
+    h1 {
+      margin: 0;
+      text-align: center;
+      &:before {
+        margin-left: -25vw;
+        text-align: center;
+      }
+    }
+    .center-header {
+      width: 100vw;
+      margin-left: 0;
+      p.gradient {
+        font-size: 2.5vw;
+      }
+      p.line-heighten {
+        font-size: 2.3vw;
+        width: 90vw;
+        line-height: 3vw;
+        margin: 20px auto;
+      }
+    }
+  }
+}
+
